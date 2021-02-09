@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="profile">
+    <div id="hero">
+        <img src="{{ url_for('static', filename='images/avatar.png') }}" alt="" id="profile-pic">
+        <h1>Anakai Richards</h1>
+        <p id="usr">@richtwin567</p>
+        <p id="location">Kingston, Jamaica</p>
+        <p id="joined">Joined {{ date_joined }}</p>
+    </div>
+    <div id="info">
+        <p id="bio">I am a 2nd-year Software Engineering student at the University of the West Indies. I love to code! My hobbies include digital art, knitting, crocheting and dancing.</p>
+        <div id="account-stats">
+            <div id="posts">
+                <p>7</p>
+                <p>Posts</p>
+            </div>
+            <div id="following">
+                <p>100</p>
+                <p>Following</p>
+            </div>
+            <div id="followers">
+                <p>250</p>
+                <p>Followers</p>
+            </div>
+        </div>
+        <span href="" id="follow-btn">Follow</span>
+    </div>
+</div>
+{% endblock %}

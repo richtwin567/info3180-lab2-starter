@@ -1,3 +1,93 @@
 body {
-    padding-top: 5rem;
+	padding-top: 5rem;
+}
+
+p{
+    margin: 0;
+}
+
+#profile {
+	width: 60%;
+	height: min-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7px;
+	border: 1px darkgray solid;
+    box-shadow: 0 0 5px darkgray;
+    overflow: hidden;
+    left: 20%;
+    position: relative;
+}
+
+#profile-pic {
+	width: 12rem;
+	height: auto;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 0 10px #63866e;
+}
+
+#hero {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #71b07b;
+	background: radial-gradient(#8cca96, #65a66f);
+	padding: 1rem 3rem;
+	color: white;
+}
+
+#hero p,
+#hero h1 {
+	text-shadow: 0 2px 5px #63866e;
+}
+
+#info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    padding: 3rem;
+}
+
+#account-stats {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+#account-stats > * {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#account-stats > * > p:first-child{
+    color: #444444;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#bio, #account-stats > * > p:last-child{
+    color: #c4c4c4;
+}
+
+#bio{
+    margin-bottom: 2rem;
+}
+
+#follow-btn {
+	padding: 0.5rem 3rem;
+	background-color: #7ed321;
+	color: white;
+	border-radius: 7px;
+    margin-top: 2rem;
+    cursor: pointer;
 }
